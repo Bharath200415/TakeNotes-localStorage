@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 export const NotePropType = PropTypes.shape({
-  id: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string,
-  createdAt: PropTypes.number,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  createdAt: PropTypes.number.isRequired,
 });

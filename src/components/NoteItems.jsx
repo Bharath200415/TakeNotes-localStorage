@@ -1,5 +1,0 @@
-function NoteItems(){
-    
-}
-
-export {NoteItems}

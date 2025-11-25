@@ -2,12 +2,12 @@ import propTypes from "prop-types";
 import {Plus} from "lucide-react";
 import { Button } from "@/components/ui/button"
 
-function EmptyState ({message,buttonText}){
+function EmptyState ({message,buttonText,onButtonClick}){
   return (
     <div className="flex items-center justify-center h-full">
         <div className="text-center p-8">
             <p className="text-muted-foreground mb-4">{message}</p>
-            <Button>
+            <Button onClick ={onButtonClick}>
                 <Plus className="h-4 w-4 mr-2"/>{buttonText}
             </Button>
         </div>
@@ -17,7 +17,7 @@ function EmptyState ({message,buttonText}){
 EmptyState.propTypes = {
     message:propTypes.string,
     buttonText:propTypes.string,
-    onButtonClick:()=>propTypes.void
+    onButtonClick: propTypes.func.isRequired,
 }
 
 export default EmptyState;

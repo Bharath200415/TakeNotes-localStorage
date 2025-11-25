@@ -2,7 +2,6 @@ import {Plus} from "lucide-react"
 import {Button} from "./ui/button"
 import PropTypes from "prop-types"
 import { NotePropType } from "../lib/type"
-import { NoteItems } from "./NoteItems"
 import propTypes from "prop-types"
 
 Header.propTypes = {
